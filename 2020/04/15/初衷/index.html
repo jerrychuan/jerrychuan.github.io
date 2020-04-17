@@ -17,11 +17,11 @@
   <meta http-equiv="window-target" content="_top" />
   
   
-  <title>初衷 | 梅花落满了南山的Blog</title>
+  <title>初衷 | 梅花落满了南山</title>
   <meta name="description" content="情不知所起，一往而深！">
 <meta property="og:type" content="article">
 <meta property="og:title" content="初衷">
-<meta property="og:url" content="http://yoursite.com/2020/04/15/%E5%88%9D%E8%A1%B7/index.html">
+<meta property="og:url" content="https://jerrychuan.github.io/2020/04/15/%E5%88%9D%E8%A1%B7/index.html">
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="情不知所起，一往而深！">
 <meta property="og:locale" content="en_US">
@@ -30,7 +30,7 @@
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
   <!-- Canonical links -->
-  <link rel="canonical" href="http://yoursite.com/2020/04/15/%E5%88%9D%E8%A1%B7/index.html">
+  <link rel="canonical" href="https://jerrychuan.github.io/2020/04/15/%E5%88%9D%E8%A1%B7/index.html">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -54,7 +54,7 @@
       
       
       <div class="profile-block text-center">
-        <a id="avatar" href="" target="_blank">
+        <a id="avatar" href="." target="_blank">
           <img class="img-circle img-rotate" src="/images/head.jpg" width="200" height="200">
         </a>
         <h2 id="name" class="hidden-xs hidden-sm">梅花落满了南山</h2>
@@ -64,14 +64,27 @@
       
       <div class="search" id="search-form-wrap">
 
-    <form class="search-form sidebar-form" method="GET" action="https://www.baidu.com/s?">
-	<div class="input-group">
-    	<input name="wd" type="text" class="form-control search-form-input" placeholder="Search" />
-	    <span class="input-group-btn">
-	    	<button type="submit" class=" btn btn-flat search-form-submit"><i class="icon icon-search"></i></button>
-	    </span>
+    <form class="search-form sidebar-form">
+        <div class="input-group">
+            <input type="text" class="search-form-input form-control" placeholder="Search" />
+            <span class="input-group-btn">
+                <button type="submit" class="search-form-submit btn btn-flat" onclick="return false;"><i class="icon icon-search"></i></button>
+            </span>
+        </div>
+    </form>
+    <div class="ins-search">
+  <div class="ins-search-mask"></div>
+  <div class="ins-search-container">
+    <div class="ins-input-wrapper">
+      <input type="text" class="ins-search-input" placeholder="Type something..." x-webkit-speech />
+      <button type="button" class="close ins-close ins-selectable" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
     </div>
-</form>
+    <div class="ins-section-wrapper">
+      <div class="ins-section-container"></div>
+    </div>
+  </div>
+</div>
+
 
 </div>
       <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false">
@@ -85,28 +98,28 @@
       <ul class="nav navbar-nav main-nav ">
         
         
-        <li class="menu-item menu-item-首页">
+        <li class="menu-item menu-item-home">
           <a href="/.">
             
             <i class="icon icon-home-fill"></i>
             
-            <span class="menu-title">menu.首页</span>
+            <span class="menu-title">Home</span>
           </a>
         </li>
         
         
-        <li class="menu-item menu-item-归档">
-          <a href="https://www.baidu.com/" target="_blank" rel="noopener">
+        <li class="menu-item menu-item-archives">
+          <a href="/archives">
             
             <i class="icon icon-archives-fill"></i>
             
-            <span class="menu-title">menu.归档</span>
+            <span class="menu-title">Archives</span>
           </a>
         </li>
         
         
         <li class="menu-item menu-item-categories">
-          <a href="/%E5%88%86%E7%B1%BB">
+          <a href="/categories">
             
             <i class="icon icon-folder"></i>
             
@@ -116,7 +129,7 @@
         
         
         <li class="menu-item menu-item-tags">
-          <a href="/%E6%A0%87%E7%AD%BE">
+          <a href="/tags">
             
             <i class="icon icon-tags"></i>
             
@@ -135,8 +148,18 @@
         </li>
         
         
+        <li class="menu-item menu-item-books">
+          <a href="/books">
+            
+            <i class="icon icon-book-fill"></i>
+            
+            <span class="menu-title">Books</span>
+          </a>
+        </li>
+        
+        
         <li class="menu-item menu-item-links">
-          <a href="/%E5%8F%8B%E9%93%BE">
+          <a href="/links">
             
             <i class="icon icon-friendship"></i>
             
@@ -146,7 +169,7 @@
         
         
         <li class="menu-item menu-item-about">
-          <a href="/%E5%85%B3%E4%BA%8E">
+          <a href="/about">
             
             <i class="icon icon-cup-fill"></i>
             
@@ -159,15 +182,7 @@
 	
     <ul class="social-links">
     	
-        <li><a href="/null" target="_blank" title="Github" data-toggle=tooltip data-placement=top><i class="icon icon-github"></i></a></li>
-        
-        <li><a href="/null" target="_blank" title="Weibo" data-toggle=tooltip data-placement=top><i class="icon icon-weibo"></i></a></li>
-        
-        <li><a href="/null" target="_blank" title="Twitter" data-toggle=tooltip data-placement=top><i class="icon icon-twitter"></i></a></li>
-        
-        <li><a href="/null" target="_blank" title="Behance" data-toggle=tooltip data-placement=top><i class="icon icon-behance"></i></a></li>
-        
-        <li><a href="/atom.xml" target="_blank" title="Rss" data-toggle=tooltip data-placement=top><i class="icon icon-rss"></i></a></li>
+        <li><a href="/atom.xml" target="_blank" title="Rss" ><i class="icon icon-rss"></i></a></li>
         
     </ul>
 
@@ -298,7 +313,7 @@
     
     <li class="post-copyright-link hidden-xs">
       <strong>本文链接：</strong>
-      <a href="http://yoursite.com/2020/04/15/%E5%88%9D%E8%A1%B7/" title="初衷" target="_blank" rel="external">http://yoursite.com/2020/04/15/%E5%88%9D%E8%A1%B7/</a>
+      <a href="https://jerrychuan.github.io/2020/04/15/%E5%88%9D%E8%A1%B7/" title="初衷" target="_blank" rel="external">https://jerrychuan.github.io/2020/04/15/%E5%88%9D%E8%A1%B7/</a>
     </li>
     
     <li class="post-copyright-license">
@@ -312,12 +327,12 @@
   <div class="panel-body">
     <figure class="media">
       <div class="media-left">
-        <a href="" target="_blank" class="img-burn thumb-sm visible-lg">
+        <a href="." target="_blank" class="img-burn thumb-sm visible-lg">
           <img src="/images/head.jpg" class="img-rounded w-full" alt="">
         </a>
       </div>
       <div class="media-body">
-        <h3 class="media-heading"><a href="" target="_blank"><span class="text-dark">梅花落满了南山</span><small class="ml-1x">框架使用者 &amp; 代码搬运工</small></a></h3>
+        <h3 class="media-heading"><a href="." target="_blank"><span class="text-dark">梅花落满了南山</span><small class="ml-1x">框架使用者 &amp; 代码搬运工</small></a></h3>
         <div>一个集美貌与智慧于一身的秃头男孩。</div>
       </div>
     </figure>
@@ -353,13 +368,63 @@
   </ul>
   
   
+  <!-- Button trigger modal -->
+  <button type="button" class="btn btn-fancy btn-donate pop-onhover bg-gradient-warning" data-toggle="modal" data-target="#donateModal"><span>$</span></button>
+  <!-- <div class="wave-icon wave-icon-danger btn-donate" data-toggle="modal" data-target="#donateModal">
+    <div class="wave-circle"><span class="icon"><i class="icon icon-bill"></i></span></div>
+  </div> -->
+  
   
   <div class="bar-right">
+    
+    <div class="share-component" data-sites="weibo,qq,wechat" data-mobile-sites="weibo,qq,qzone"></div>
     
   </div>
   </div>
 </nav>
   
+<!-- Modal -->
+<div class="modal modal-center modal-small modal-xs-full fade" id="donateModal" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content donate">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      <div class="modal-body">
+        <div class="donate-box">
+          <div class="donate-head">
+            <p>Maybe you could buy me a cup of coffee.</p>
+          </div>
+          <div class="tab-content">
+            <div role="tabpanel" class="tab-pane fade active in" id="alipay">
+              <div class="donate-payimg">
+                <img src="/images/donate/zfb.png" alt="Scan Qrcode" title="Scan" />
+              </div>
+              <p class="text-muted mv">Scan this qrcode</p>
+              <p class="text-grey">Open alipay app scan this qrcode, buy me a coffee!</p>
+            </div>
+            <div role="tabpanel" class="tab-pane fade" id="wechatpay">
+              <div class="donate-payimg">
+                <img src="/images/donate/wx.png" alt="Scan Qrcode" title="Scan" />
+              </div>
+              <p class="text-muted mv">Scan this qrcode</p>
+              <p class="text-grey">Open wechat app scan this qrcode, buy me a coffee!</p>
+            </div>
+          </div>
+          <div class="donate-footer">
+            <ul class="nav nav-tabs nav-justified" role="tablist">
+              <li role="presentation" class="active">
+                <a href="#alipay" id="alipay-tab" role="tab" data-toggle="tab" aria-controls="alipay" aria-expanded="true"><i class="icon icon-alipay"></i> alipay</a>
+              </li>
+              <li role="presentation" class="">
+                <a href="#wechatpay" role="tab" id="wechatpay-tab" data-toggle="tab" aria-controls="wechatpay" aria-expanded="false"><i class="icon icon-wepay"></i> wechat payment</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
 
 
 </main>
@@ -369,15 +434,7 @@
 	
     <ul class="social-links">
     	
-        <li><a href="/null" target="_blank" title="Github" data-toggle=tooltip data-placement=top><i class="icon icon-github"></i></a></li>
-        
-        <li><a href="/null" target="_blank" title="Weibo" data-toggle=tooltip data-placement=top><i class="icon icon-weibo"></i></a></li>
-        
-        <li><a href="/null" target="_blank" title="Twitter" data-toggle=tooltip data-placement=top><i class="icon icon-twitter"></i></a></li>
-        
-        <li><a href="/null" target="_blank" title="Behance" data-toggle=tooltip data-placement=top><i class="icon icon-behance"></i></a></li>
-        
-        <li><a href="/atom.xml" target="_blank" title="Rss" data-toggle=tooltip data-placement=top><i class="icon icon-rss"></i></a></li>
+        <li><a href="/atom.xml" target="_blank" title="Rss" ><i class="icon icon-rss"></i></a></li>
         
     </ul>
 
@@ -399,16 +456,26 @@ window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
 <script src="/js/application.js"></script>
 
 
-
     <script>
-(function ($) {
-    $('.search-form').on('submit', function (e) {
-        var keyword = $('.search-form-input[name="wd"]').val();
-        window.location = 'https://www.baidu.com/s?wd=site:yoursite.com ' + keyword;
-        return false;
-    });
-})(jQuery);
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: 'Posts',
+            PAGES: 'Pages',
+            CATEGORIES: 'Categories',
+            TAGS: 'Tags',
+            UNTITLED: '(Untitled)',
+        },
+        ROOT_URL: '/',
+        CONTENT_URL: '/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
 </script>
+
+<script src="/js/insight.js"></script>
+
+
 
 
 
